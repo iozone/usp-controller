@@ -4,11 +4,3 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
-
-dependencies {
-    implementation 'com.google.protobuf:protobuf-java:3.6.1'
-}
-
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"

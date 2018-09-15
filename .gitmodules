@@ -1,0 +1,3 @@
+[submodule "usp-profobuf"]
+	path = usp-profobuf
+	url = git@github.com:iozone/usp-protobuf.git
