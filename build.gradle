@@ -1,6 +1,17 @@
-buildscript {
+subprojects {
+    apply plugin: 'java'
+
     repositories {
-        mavenCentral()
+       mavenCentral()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.12'
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'gradle'
     }
 }
-

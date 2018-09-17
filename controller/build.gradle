@@ -1,6 +1,18 @@
 apply plugin: 'java'
 
-dependencies {
-    implementation 'com.google.protobuf:protobuf-java:3.6.1'
+repositories {
+    mavenCentral()
 }
+
+dependencies {
+    compile project(':usp-profobuf')
+    implementation 'com.google.protobuf:protobuf-java:3.6.1'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
+
 
